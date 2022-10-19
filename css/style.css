@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+:root{
+    --color1: #66E2DC;
+    --color2:#FA7453;
+    --color3:#FFB964;
+    --color4:#FCFAF9;
+    --color5:#191826;
+
+    /*Typo*/
+    --ff: 'IBM Plex Sans', sans-serif;
+    /*h1*/
+    --h1-lh:68px;
+    --h1-ls: -1px;
+    --h1-fw:700;
+    --h1-fs:88px;
+
+    /*h2*/
+    --h2-lh:52px;
+    --h2-fw: 700;
+    --h2-fs:40px;
+
+    /*Body1*/
+    --body-fs:20px;
+    --body-lh: 34px;    
+    /*Body2*/
+    --body2-fs: 16px;
+    --body2-lh: 26px;
+
+}
+
+/* General */
+html, body{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--ff);
+    font-size: var(--body2-fs);
+    line-height: var(--body2-lh);
+    background-image: url("../assets/bg-main-mobile.png");
+    color: var(--color5)
+}
+h1{
+    font-size: var(--h1-fs);
+    line-height: var(--h1-lh);
+    font-weight:var(--h1-fw);
+    letter-spacing: var(--h1-ls)
+}h2{
+    font-size: var(--h2-fs);
+    font-weight: var(--h2-fw);
+    line-height: var(--h2-lh);
+}
+
+/* Buttons */
+.button {
+    min-width: 290px;
+    text-align: center;
+    min-height: 60px;
+    font-weight: 700;
+    border-radius: 12px;
+    display: grid;
+    align-items: center;
+    font-size: 18px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.iosDownload {
+    background: var(--color5);
+    color: var(--color4);
+}
+
+.androidDownload {
+    background-color: var(--color4);
+    color: var(--color5);
+}
+
+
+/*Content */
+main{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+section {padding: 34px 0;}
+
+/*Header */
+header{
+    padding: 39px 0;
+}
+
+/*Hero */
+h1{font-size: 40px;}
+h2 {font-size: 36px;}
+/* App */
+.app_img {
+    display: flex;
+    background-image: url('../assets/bg-pattern-2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color5);
+    position: relative;
+    border-radius: 15px;
+    margin-top: 50px;
+    z-index: 2;
+    padding-bottom: 50px;
+}.app_img img {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+.app_info {
+    background: var(--color2);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: -20px;
+    z-index: 99;
+    color: var(--color4);
+    position: relative;
+    gap: 30px;
+    display: grid;
+}
+.app_info h2 {
+    padding: 0;
+    margin-bottom: 0;
+}
+.app_info p {margin-top: 0;}
+
+.app_price span {
+    font-size: 80px;
+    font-weight: var(--h1-fw);
+}
+
+/* Footer */
+.footer_social {
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    display: grid;
+    gap: 20px;
+}
