@@ -62,6 +62,10 @@ h1{
     display: grid;
     align-items: center;
     font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 .buttons {
     display: flex;
@@ -75,15 +79,23 @@ h1{
     color: var(--color4);
 }
 
+.iosDownload:hover {
+    background: var(--color1);
+}
+
 .androidDownload {
     background-color: var(--color4);
     color: var(--color5);
 }
 
+.androidDownload:hover {
+    background: var(--color3);
+}
+
 
 /*Content */
 main{
-    max-width: 90vw;
+    max-width: 1200px;
     margin: 0 auto;
 }
 section {padding: 34px 0;}
@@ -142,11 +154,16 @@ h2 {font-size: 36px;}
     gap: 20px;
 }
 
+.footer_social_ico:hover {
+    cursor: pointer;
+    color: var(--color2) !important;
+}
+
 footer {
     display: grid;
     gap: 20px;
 }
-
+.footer_logo {align-self: flex-start;}
 
 /* Extra small mobile */
 @media (max-width:375px) {
@@ -191,4 +208,48 @@ footer {
         display: flex;
     }
 
+}
+
+
+@media (min-width: 1024px) {
+    html, body{
+        background-image: url(../assets/bg-main-desktop.png);
+        background-position: center;
+    }
+
+    .hero {
+        max-width: 85vw;
+        position: relative;
+    }
+
+    h1 {
+        font-size: var(--h1-fs);
+        line-height: var(--h1-lh);
+    }
+
+    body {
+        font-size: var(--body-fs);
+    }
+
+    .app_info {
+        position: absolute;
+        margin: unset;
+        top: 165px;
+        right: 90px;
+        max-width: 446px;
+    }
+
+    .app {
+        position: relative;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer_text {
+        max-width: 450px;
+    }
 }
